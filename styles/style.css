@@ -30,25 +30,6 @@ body {
     left: 43%;
 }
 
-.paper {
-    height: 91vh;
-    width: 34vw;
-    position: absolute;
-    left: 5%;
-}
-
-.text {
-    font-size: 3em;
-    font-family: 'mr_HangingLettersG', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: none;
-    color: #00ae14;
-    position: absolute;
-    left: 12%;
-    z-index: 1;
-    margin: 0;
-    top: 15%;
-}
-
 .many_gifts {
     height: 20vh;
     width: 10vw;
@@ -63,6 +44,38 @@ body {
     position: absolute;
     top: 89%;
     left: 39%;
+}
+
+.paper {
+    height: 91vh;
+    width: 34vw;
+    position: absolute;
+    left: 5%;
+}
+
+.text {
+    font-size: 4em;
+    font-family: 'mr_HangingLettersG', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: #00ae14;
+    position: absolute;
+    left: 11%;
+    z-index: 1;
+    margin: 0;
+    top: 15%;
+}
+
+.stih {
+    font-size: 2.9em;
+    width: 25vw;
+    text-decoration: none;
+    font-family: 'majestic-x', 'Arial Narrow', Arial, sans-serif;
+    color: #0419bb;
+    position: absolute;
+    top: 32%;
+    left: 10%;
+    z-index: 1;
+    margin: 0;
 }
 
 .image__snowflake {
@@ -82,19 +95,6 @@ body {
     position: absolute;
     transition: all 10s linear;
     top: -35px;
-}
-
-.stih {
-    font-size: 2.7em;
-    width: 20vw;
-    text-decoration: none;
-    font-family: 'majestic-x', 'Arial Narrow', Arial, sans-serif;
-    color: #0419bb;
-    position: absolute;
-    top: 24%;
-    left: 13%;
-    z-index: 1;
-    margin: 0;
 }
 
 .down {
