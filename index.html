@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./images/firework.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="postcard">
+        <div>
+            <p href="#" class="text">С Новым годом!</p>
+        </div>
+        <p class="stih">
+            С Новым годом, с Новым счастьем,
+            В жизни каждого участием,
+            Чтоб добро вокруг царило,
+            Чтобы все, что хочешь, было!</p>
+        <img src="./images/pngwing.com.png" class="paper" alt="">
+    </div>
+    <div class="new_year_symvol">
+        <div class="image__tree">
+            <img src="./images/christmas-tree.png" class="tree" alt="">
+        </div>
+        <div class="image_santa">
+            <img src="./images/santa.png" class="santa" alt="">
+        </div>
+        <div class="image__mantygifts">
+            <img src="./images/gift.png" class="many_gifts" alt="">
+        </div>
+        <div class="image__onegift">
+            <img src="./images/giftbox.png" class="one_gift" alt="">
+        </div>
+        <div>
+            <div class="image__snowflake">
+            </div>
+            <script>
+                let mainBlock = document.querySelector(".image__snowflake");
+                let windowWidth = window.outerWidth;
+                function getRandomInt(max) {
+                    return Math.floor(Math.random() * max)
+                }
+                setInterval(e => {
+                    let img = document.createElement("img")
+                    img.setAttribute("src", "./images/snowflake.png");
+                    img.setAttribute("class", "snowflake");
+                    rand = getRandomInt(windowWidth);
+                    img.setAttribute("style", `left:${rand <= windowWidth - 35 ? rand : windowWidth - 35}px`);
+                    console.log(mainBlock, windowWidth, img);
+                    mainBlock.insertAdjacentElement("afterbegin", img);
+                    setTimeout(
+                        e => {
+                            img.classList.add("down")
+                        }
+                        , 100
+                    );
+                    setTimeout(
+                        e => {
+                            img.remove()
+                        }
+                        , 10000
+                    );
+
+                }, 100)
+
+            </script>
+</body>
+
+</html>
